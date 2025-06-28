@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dark Z Security Lab | Ciberseguridad & Hacking Ético</title>
+  <meta name="description" content="Servicios corporativos de ciberseguridad, hacking ético y auditorías digitales avanzadas." />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <!-- AOS Animations -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <style>
+    :root {
+      --dark: #0a0a0a;
+      --dark-alt: #10151c;
+      --accent: #00ffcc;
+      --accent-alt: #00d4ad;
+      --text: #e8e8e8;
+    }
+    *{margin:0;padding:0;box-sizing:border-box}
+    body{font-family:'Montserrat',sans-serif;background-color:var(--dark);color:var(--text);line-height:1.6}
+    a{text-decoration:none;color:inherit}
+    .navbar{position:fixed;top:0;width:100%;display:flex;justify-content:space-between;align-items:center;padding:1rem 2rem;background:rgba(0,0,0,0.6);backdrop-filter:blur(6px);z-index:999}
+    .navbar .logo{display:flex;align-items:center;font-family:'Share Tech Mono',monospace;color:var(--accent);font-size:1.3rem}
+    .navbar ul{display:flex;gap:1.5rem;list-style:none}
+    .navbar a:hover{color:var(--accent)}
+    .hero{height:100vh;background:url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=2100&q=80') center/cover no-repeat;display:flex;align-items:center;justify-content:center;position:relative;text-align:center}
+    .hero::before{content:"";position:absolute;inset:0;background:linear-gradient(135deg,rgba(0,0,0,0.7),rgba(0,0,0,0.4))}
+    .hero-content{position:relative;z-index:1;max-width:900px;padding:0 1rem}
+    .hero h1{font-size:3rem;margin-bottom:1rem;color:var(--accent)}
+    .hero p{font-size:1.2rem;margin-bottom:2rem;color:#d0d0d0}
+    .btn-primary{display:inline-block;padding:0.9rem 2rem;background:var(--accent);color:#000;border-radius:4px;font-weight:600;transition:background .3s}
+    .btn-primary:hover{background:var(--accent-alt)}
+    section{padding:4rem 2rem;max-width:1200px;margin:auto}
+    section h2{font-size:2.2rem;margin-bottom:2rem;color:var(--accent);position:relative;padding-left:0.6rem}
+    section h2::before{content:"";position:absolute;left:0;top:0;height:100%;width:4px;background:var(--accent)}
+    .services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:2rem}
+    .service-card{background:var(--dark-alt);border-radius:10px;overflow:hidden;box-shadow:0 0 12px rgba(0,0,0,0.4);transition:transform .3s}
+    .service-card:hover{transform:translateY(-6px)}
+    .service-card img{width:100%;height:160px;object-fit:cover}
+    .service-card-content{padding:1.5rem}
+    .service-card h3{margin-bottom:0.7rem;color:var(--accent-alt);font-size:1.3rem}
+    .about-wrapper{display:flex;flex-wrap:wrap;gap:2rem;align-items:center}
+    .about-wrapper img{flex:1 1 350px;border-radius:10px;max-width:100%}
+    .about-text{flex:1 1 350px;font-size:1rem;color:#ccc}
+    .contact-box{background:var(--dark-alt);padding:3rem;border-radius:10px;text-align:center}
+    .contact-box p{margin:0.5rem 0}
+    footer{background:#050505;padding:2rem;text-align:center;font-size:0.9rem;color:#666}
+    @media (max-width:768px){.hero h1{font-size:2.3rem}.hero p{font-size:1rem}}
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">Dark Z Security Lab</div>
+    <ul>
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="#nosotros">Nosotros</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <header class="hero" id="inicio">
+    <div class="hero-content" data-aos="fade-up">
+      <h1>Ciberseguridad de Alto Nivel</h1>
+      <p>Protegemos tu infraestructura y datos con expertise en hacking ético y auditorías de seguridad.</p>
+      <a href="#contacto" class="btn-primary">Solicitar asesoría</a>
+    </div>
+  </header>
+
+  <section id="servicios" data-aos="fade-right">
+    <h2>Servicios Especializados</h2>
+    <div class="services-grid">
+      <div class="service-card" data-aos="zoom-in" data-aos-delay="100">
+        <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=800&q=60" alt="Pentesting Web">
+        <div class="service-card-content">
+          <h3>Pentesting Web</h3>
+          <p>Detección y explotación controlada de vulnerabilidades OWASP Top 10, inyección SQL, XSS y más.</p>
+        </div>
+      </div>
+      <div class="service-card" data-aos="zoom-in" data-aos-delay="200">
+        <img src="https://source.unsplash.com/featured/?mobile,security" alt="Auditoría Móvil">
+        <div class="service-card-content">
+          <h3>Auditoría Móvil</h3>
+          <p>Análisis de seguridad para apps iOS y Android, revisión de permisos, tráfico y almacenamiento.</p>
+        </div>
+      </div>
+      <div class="service-card" data-aos="zoom-in" data-aos-delay="300">
+        <img src="https://source.unsplash.com/featured/?server,technology" alt="Seguridad en Infraestructura">
+        <div class="service-card-content">
+          <h3>Seguridad en Infraestructura</h3>
+          <p>Fortalecimiento de servidores, redes y endpoints. Configuración segura y políticas de acceso.</p>
+        </div>
+      </div>
+      <div class="service-card" data-aos="zoom-in" data-aos-delay="400">
+        <img src="https://images.unsplash.com/photo-1573166364520-b422a2d23a4c?auto=format&fit=crop&w=800&q=60" alt="Forense Digital">
+        <div class="service-card-content">
+          <h3>Forense Digital</h3>
+          <p>Investigación y preservación de evidencia, análisis de incidentes y recuperación de datos.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="nosotros" data-aos="fade-left">
+    <h2>¿Por qué elegirnos?</h2>
+    <div class="about-wrapper">
+      <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=800&q=60" alt="Equipo de Ciberseguridad">
+      <div class="about-text">
+        <p>Somos un equipo certificado en hacking ético (CEH, OSCP) con más de 10 años de experiencia ayudando a empresas de LATAM a proteger sus activos digitales. Combinamos metodologías internacionales con un enfoque personalizado y confidencial.</p>
+        <p>Nuestro objetivo es adelantarnos a las amenazas, reduciendo riesgos y brindando tranquilidad a nuestros clientes.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto" data-aos="fade-up">
+    <h2>Contáctanos</h2>
+    <div class="contact-box">
+      <p><strong>WhatsApp:</strong> +51 934 470 022</p>
+      <p><strong>Telegram:</strong> <a href="https://t.me/DarkZ66" target="_blank">@DarkZ66</a></p>
+      <p><strong>Email:</strong> erickdelmallquiramos@gmail.com</p>
+      <a href="https://wa.me/51934470022" class="btn-primary" target="_blank">Hablar ahora</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Dark Z Security Lab – Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- AOS Script -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({duration:800,once:true});
+  </script>
+</body>
+</html>
